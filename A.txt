@@ -4,4 +4,4 @@ git status (checks which one file you added as git add)
 git commit -m "first commit" (local repo)
 git branch -M main
 git remote add origin URL github
-git push(central repo)
+git push -u origin main (central repo)
