@@ -5,3 +5,5 @@ git commit -m "first commit" (local repo)
 git branch -M main
 git remote add origin URL github
 git push -u origin main (central repo)
+rm A.txt (deletes files which accidently added)
+git pull (takes code which someone added extra code)
