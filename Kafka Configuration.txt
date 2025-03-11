@@ -1,0 +1,46 @@
+Step 1: 📥 Download Zookeeper 🔗 [https://dlcdn.apache.org/zookeeper/zookeeper-3.8.4/apache-zookeeper-3.8.4-bin.tar.gz](https://dlcdn.apache.org/zookeeper/zookeeper-3.8.4/apache-zookeeper-3.8.4-bin.tar.gz)
+
+Step 2: 📥 Download Kafka Server 
+
+https://download.apache.org/kafka/3.8.0/kafka_2.12-3.8.0.tgz
+
+
+
+Step 3: ⚙️ Set ZOOKEEPER Path
+🛠️ Set the ZOOKEEPER path in the environment variable up to the `bin` folder.
+
+Step 4: 📂 Copy Config Files
+📌 Go to the Kafka server folder, copy `zookeeper.properties` and `server.properties` from `kafka/config`, and paste them into `kafka/bin/windows`.
+
+Step 5: 🚀 Start ZOOKEEPER Server
+📌 Navigate to `kafka/bin/windows` and run the command:
+
+```cmd
+zookeeper-server-start.bat zookeeper.properties
+```
+
+Step 6: 🚀 Start Kafka Server
+📌 Navigate to `kafka/bin/windows` and run the command:
+
+```cmd
+kafka-server-start.bat server.properties
+```
+
+Step 7: 📝 Create a Kafka Topic
+📌 Navigate to the Kafka root folder (`kafka/bin/windows`) and run the command:
+
+```cmd
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic order_topic_1
+```
+
+Step 8: 🔍 View Created Topic
+📌 Run the command to list all topics:
+
+```cmd
+kafka-topics.bat --list --bootstrap-server localhost:9092
+```
+
+📌 Check if `order_topic_1` exists.
+
+⚠️ NOTE: If the Kafka server stops, delete logs from the temp folder and restart the Kafka server.
+
