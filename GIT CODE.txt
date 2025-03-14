@@ -9,13 +9,19 @@ git clone URL (clone repository 1st time doing)
 rm A.txt (deletes files which accidently added)
 git pull (takes code which someone added extra code)
 
+--------------create branches----------------------------------------
+git branch ( to see branch)
+git checkout ( exit current branch)
+git chekcout -b give_new_branch_name  ( exit current branch and create new branch)
+
 
 
 -----------------pull conflict-------------------
-when 2 developer working on same project we pull the repository we get pull conflict
+when 2 developer working on same project and same file we pull the repository we get pull conflict
 
 
 
 
 
 --------------merge conflict---------------------------------
+when we get merge conflic ? ex: main branch 7 line int x=10;   and fetures branch 7 line is int y=20 when you merge feature to main you get merge conflict
