@@ -8,3 +8,14 @@ git push -u origin main (central repo)
 git clone URL (clone repository 1st time doing)
 rm A.txt (deletes files which accidently added)
 git pull (takes code which someone added extra code)
+
+
+
+-----------------pull conflict-------------------
+when 2 developer working on same project we pull the repository we get pull conflict
+
+
+
+
+
+--------------merge conflict---------------------------------
