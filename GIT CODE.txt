@@ -15,13 +15,22 @@ git checkout ( exit current branch)
 git chekcout -b give_new_branch_name  ( exit current branch and create new branch)
 
 
-
 -----------------pull conflict-------------------
 when 2 developer working on same project and same file we pull the repository we get pull conflict
 
 
-
-
-
 --------------merge conflict---------------------------------
 when we get merge conflic ? ex: main branch 7 line int x=10;   and fetures branch 7 line is int y=20 when you merge feature to main you get merge conflict
+
+-----------revert and reset  when you commit by mistakely wrong code/file in git repository-----------------------------------
+
+it is used UNDO the changes
+git revert id
+ex: git revert af0f35a
+
+
+---------when you commit by mistakely wrong code/file in local repository-------------------------------
+
+git reset --soft HEAD~!  (reset last 1st changes in local repoistory but in your local working tree remain file present) 
+git reset --hard HEAD~!  (reset last 1st changes in local repoistory but in your local  working tree not file present) 
+
